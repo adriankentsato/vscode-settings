@@ -1,0 +1,61 @@
+{
+    "telemetry.telemetryLevel": "off",
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.sideBar.location": "right",
+    "git.path": "C:/SW/git/bin/git.exe",
+    "editor.rulers": [80, 120],
+    "terminal.integrated.profiles.windows": {
+        "MINGW": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [
+                "/k",
+                "C:/SW/msys/msys2_shell.cmd",
+                "-defterm",
+                "-here",
+                "-no-start",
+                "-mingw64"
+            ],
+            "icon": "terminal-cmd"
+        },
+        "MSYS": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [
+                "/k",
+                "C:/SW/msys/msys2_shell.cmd",
+                "-defterm",
+                "-here",
+                "-no-start",
+                "-msys"
+            ],
+            "icon": "terminal-cmd"
+        },
+        "UCRT": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [
+                "/k",
+                "C:/SW/msys/msys2_shell.cmd",
+                "-defterm",
+                "-here",
+                "-no-start",
+                "-ucrt64"
+            ],
+            "icon": "terminal-cmd"
+        }
+    },
+    "terminal.integrated.env.windows": {
+        "PATH": "{env:PATH};C:/SW/git/bin;C:/SW/nodejs"
+    },
+    "terminal.integrated.defaultProfile.windows": "MINGW",
+    "files.eol": "\n",
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on"
+}
